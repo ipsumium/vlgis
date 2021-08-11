@@ -1,0 +1,14 @@
+{
+  "name": "vlgis",
+  "version": "1.0.0",
+  "description": "GIS Viewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Viaform X SRL",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

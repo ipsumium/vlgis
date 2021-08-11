@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Portal GIS - Ramnicu Valcea</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+    <script src="leaflet-heat.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+</head>
+
+<body>
+
+    <div id="mapid"></div>
+
+
+
+    <script src="./app.js"></script>
+
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded",
+            setTimeout(function() {
+                var heatlayer = createHeatMap();
+                createSubZoneMarkers();
+                createCladiriMarkers();
+                createParcariMarkers();
+                createLayerControl(heatlayer);
+            }, 1000),
+            false
+        );
+    </script>
+</body>
+
+<footer>
+    Coded with <i class="icon ion-heart" style="color: #e25555;"></i> by <a href="https://structomatic.ro/" target="_blank">Structomatic</a>
+    <br> Data contributors: <a href="https://www.linkedin.com/in/andrei-mirea-52b14920b/" target="_blank">Andrei Mirea</a>,
+    <a href="https://www.linkedin.com/in/ioan-valerian-her%C4%83scu-06112682/" target="_blank">Herăscu Ioan-Valerian</a>
+    <a href="https://www.linkedin.com/in/elena-georgiana-vangu-8a06671ba/" target="_blank">Vangu Georgiana-Elena</a>
+    <a href="#">Vlăsceanu Bianca-Marina</a>
+    <br>
+    <a href="#">Gruițoiu Radu Gabriel</a>
+    <a href="#">Teodoriu Ionut Bogdan</a>
+    <a href="#">Poenaru Alexandra</a>
+
+</footer>
+
+</html>

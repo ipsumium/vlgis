@@ -1,0 +1,112 @@
+/* @media (min-width: 780px) {
+    .leaflet-control-layers-list {
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 702px) {
+    .leaflet-control-layers-list {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 624px) {
+    .leaflet-control-layers-list {
+        font-size: 59px;
+    }
+} */
+
+@media (min-width: 702px) {
+    .leaflet-control-layers-list {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 920px) {
+    .leaflet-control-layers-list {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1070px) {
+    .leaflet-control-layers-list {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 623px) {
+    .leaflet-control-layers-list {
+        font-size: 19px;
+    }
+}
+
+html,
+body {
+    height: 97%;
+}
+
+#outer {
+    min-height: 100%;
+}
+
+* html #outer {
+    height: 100%;
+}
+
+
+/* for IE 6, if you care */
+
+body {
+    margin: 1%;
+    padding: 0;
+}
+
+#mapid {
+    height: 94%;
+}
+
+.buildingLabel {
+    color: #00595c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.parcariLabel {
+    color: #ff006a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.subZoneLabel {
+    color: #0b0072;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.leaflet-control-layers-list {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 36px; */
+    font-weight: bold;
+}
+
+.leaflet-container {
+    font-size: 15px;
+}
+
+footer {
+    display: block;
+    /* background-color: black; */
+    /* position: fixed; */
+    margin-top: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* min-height: 70px; */
+    width: 100%;
+    /* border-top: 1px solid white; */
+    text-align: center;
+    /* font-size: 14px; */
+}
